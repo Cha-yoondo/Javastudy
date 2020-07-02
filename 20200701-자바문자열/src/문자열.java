@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+import javafx.scene.transform.Scale;
+
+/*
+ * 문자열 비교:equals()
+ * ================ (==)
+ * 문자찾기:contains()
+ * 시작문자열:startsWidth()
+ * 끝나는문자열:endsWidth()
+ * 문자추출:charAt()
+ * 문자의갯수:length()
+ * 공백문자제거:trim()
+ * 문자의 위치 찾기:indexOf(),lastIndexOf()
+ *    aaa.java
+ * 형변환:valueOf   
+ */
+// 로그인처리
+public class 문자열 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//id, pwd
+		final String ID="admin";
+		final String PWD="1234";
+		
+		Scanner scan=new Scanner(System.in);
+		System.out.print("ID를 입력:");
+		String id=scan.nextLine();
+		System.out.print("비밀번호 입력:");
+		String pwd=scan.nextLine();
+		
+		//결과
+		if(id.equalsIgnoreCase(ID) && pwd.equalsIgnoreCase(PWD))
+		{
+			System.out.println("로그인되었습니다!!");
+		}
+		else
+		{
+			System.out.println("ID나 비밀번호가 틀립니다!!");
+		}
+		
+		
+		
+
+	}
+
+}
